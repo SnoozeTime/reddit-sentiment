@@ -4,7 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.zeromq/jeromq "0.3.5"]]
+                 [org.zeromq/jeromq "0.3.5"]
+                 [com.taoensso/carmine "2.17.0"]]
   :plugins [[lein-exec "0.3.7"]]
   :main ^:skip-aot worker.core
   :target-path "target/%s"

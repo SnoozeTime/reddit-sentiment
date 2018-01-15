@@ -29,9 +29,9 @@
       annotate-text
       (#(.get % CoreAnnotations$SentencesAnnotation))
       (#(map get-sentiment2 %))))
-q(def sam "yeah
-I see. I should really make something with network calls (and not just steal it off of github) some day to grasp the basics better XD
-but first I need to get my bot online...
+(def sam "yeah
+  I see. I should really make something with network calls (and not just steal it off of github) some day to grasp the basics better XD
+  but first I need to get my bot online...
 Want to get it in simulation mode by the weekend to see feasibility
 but so not comfortable with how python represents information yet
 used to work with it in univ, but completely slipped from me

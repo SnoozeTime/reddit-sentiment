@@ -4,7 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.zeromq/jeromq "0.3.5"]]
+                 [org.zeromq/jeromq "0.3.5"]
+                 [reddit-api "0.1.0"]]
   :plugins [[lein-exec "0.3.7"]]
   :main ^:skip-aot zeromqtest.core
   :target-path "target/%s"

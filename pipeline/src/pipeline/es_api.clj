@@ -1,9 +1,9 @@
-(ns db-writer.es-api
+(ns pipeline.es-api
      (:require [clj-http.client :as client]
-               [clojure.data.json :as json]))
+               [clojure.data.json :as json])
+     (:use [slingshot.slingshot :only [try+]]))
 
 (def default-conn {:url "http://127.0.0.1:9200"})
-
 
 (defn cluster-health [conn]
   (let [health-url (str (:url conn) "/_cat/health?v")]
@@ -20,7 +20,10 @@
 (defn create-index [conn index-name]
   (let [create-index-url (str (:url conn) "/" index-name "?pretty")]
     (println create-index-url)
-    (client/put create-index-url)))
+    (try+
+     (client/put create-index-url)
+     (catch [:status 400] _
+       (println "Index already exists")))))
 
 (defn create-document
   "Create document (clojure map) explicitely specifying an ID key in the map"
@@ -46,6 +49,16 @@
         bulk-create-url (str (:url conn) "/" index-name "doc/_bulk?pretty")]
     (println body)
     (client/post bulk-create-url {:content-type :json :body body})))
+
+
+
+(defn initialize-conn 
+  "Create the index if it does not exist and will return the connection"
+  []
+  (let [conn {:url "http://127.0.0.1:9200"}]
+    (create-index conn "comments")
+    conn))
+
 
 ;; ====================================================================================
 ; Search API - IN V2

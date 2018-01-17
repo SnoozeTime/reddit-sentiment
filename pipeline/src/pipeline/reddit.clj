@@ -1,9 +1,12 @@
-(ns reddit-api.core
+(ns pipeline.reddit
   (:gen-class)
   (:require [clj-http.client :as client]
             [clojure.data.json :as json]
             [clojure.walk])
   (:use [slingshot.slingshot :only [try+ throw+]]))
+
+
+(def header-user-agent {"User-Agent" "Reddit fetcher/1.0 (Snoozetime)"})
 
 ;; ==============================================================================
 ;; Some utilities to avoid repeting meself.
@@ -37,7 +40,6 @@
 (defn do-get-retry
   "Try to get a page and will retry a number of time before giving up."
   [url url-params nb-retry success-cb error-cb]
-  (println "Remaining tentatives " nb-retry)
   (do-get url
           url-params
           success-cb
@@ -45,8 +47,7 @@
             ;; Retry if retry-time is not 0
             (if (> nb-retry 0)
               (do
-                (println "got exception, will retry")
-                (recur (do-get-retry url url-params (dec nb-retry) success-cb error-cb)))
+                (do-get-retry url url-params (dec nb-retry) success-cb error-cb))
               (error-cb e)))))
 
 (defn get-body-from-http-resp
@@ -82,9 +83,10 @@
 ;; manipulate json from r/<subreddit>/
 ;; --------------------------------------------------------
 
-(defn extract-url-from-thread
+(defn extract-url-from-listing
   [thread]
-  (get-in thread [:data :url]))
+  (let [permalink (get-in thread [:data :permalink])]
+    (str reddit-url permalink)))
 
 ;; --------------------------------------------------------
 ;; Manipulate JSON from /r/subreddit/url/id/show.json
@@ -118,7 +120,7 @@
                            comments-json)
     @flattened))
 
-(def comment-keys [:body :parent_id :id])
+(def comment-keys [:body :parent_id :id :subreddit])
 
 (defn select-comment-keys [flattened-comments]
   (map #(select-keys % comment-keys) flattened-comments))
@@ -127,8 +129,8 @@
   [flattened-comments thread-id]
   (vec (map (fn [{:keys [parent_id] :as  comment}]
               (if (= thread-id parent_id)
-                (assoc comment :top-level true)
-                comment))
+                (assoc comment :top-level true :thread-id thread-id)
+                (assoc comment :thread-id thread-id)))
             flattened-comments)))
 
 
@@ -142,10 +144,10 @@
 ;; API CALLS
 ;; ------------------------------------------------------
 (defn get-last-subreddit-threads
-  "Number is limited to 100 by reddit API"
-  [subreddit number]
+  "Params will be passed as GET query parameters. Number is limited to 100 by reddit API"
+  [subreddit params]
   (do-get-retry (build-subreddit-api-call subreddit "/top.json")
-                {:query-params {:limit number}}
+                {:query-params params :headers header-user-agent}
                 http-retry-nb
                 (fn [resp]
                   (-> resp
@@ -157,8 +159,8 @@
 (defn get-thread-by-url
   "Get a complete JSON document of the thread (all comments included) from url"
   [url]
-  (do-get-retry (str test-thread-url "show.json")
-                {}
+  (do-get-retry (str url "show.json")
+                {:headers header-user-agent}
                 http-retry-nb
                 get-body-from-http-resp
                 handle-http-error))

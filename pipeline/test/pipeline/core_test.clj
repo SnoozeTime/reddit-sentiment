@@ -1,6 +1,6 @@
-(ns worker.core-test
+(ns pipeline.core-test
   (:require [clojure.test :refer :all]
-            [worker.core :refer :all]))
+            [pipeline.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

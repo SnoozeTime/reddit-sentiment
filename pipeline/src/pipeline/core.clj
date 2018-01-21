@@ -3,12 +3,24 @@
   (:require [clojure.core.async
                   :as a
                   :refer [>! <! >!! <!! go chan buffer close! thread
-                          alts! alts!! timeout]]
+                          alts! alts!! timeout go-loop]]
             [pipeline.reddit :as reddit]
-            [pipeline.es-api :as es-api]))
+            [pipeline.es-api :as es-api]
+            [clojure.tools.logging :as log]
+            [clojure.edn :as edn]
+            [clojure.java.io :as io])
+  (:use [slingshot.slingshot :only [throw+ try+]]))
 
 ;; Parameters for the application in seconds 
 (def fetch-sleeping-time 1800) ;; 30 minutes
+
+(defn load-properties []
+  (let [path (System/getenv "REDDIT_PROJECT_PROPS_PATH")]
+    (try+
+     (edn/read-string (slurp path))
+     (catch IllegalArgumentException _
+       (log/info "Cannot find property file at " path ".\n Please set the environment variable REDDIT_PROJECT_PROPS_PATH")
+       (throw+)))))
 
 ;; ===================================================================================
 ;; This block will fetch the data from new listings in a subreddit.
@@ -21,21 +33,25 @@
 ;; ===================================================================================
 
 (defn latest-listing-fetcher
-  "What subreddit to follow. How many seconds between each fetch"
-  [subreddit sleeping-time]
+  "What subreddit to follow (from channel). How many seconds between each fetch"
+  [subreddit-chan sleeping-time]
+  (log/info "Starts latest-listing-fetcher")
   (let [out (chan)]
-    (go
-      (while true
-        (let [;; By default, will get the last 25 threads
-              listings (reddit/get-last-subreddit-threads subreddit {})]
-          
-          ;; If we have something, we need to send them to out and then we can update fullname
-          (doseq [listing listings]
-            (>! out (reddit/extract-url-from-listing listing)))
+    (go-loop [subreddit (<! subreddit-chan)]
+      (if (= :close subreddit)
+        (log/info "Close latest-listing-fetcher")
+        (do
+          (let [;; By default, will get the last 25 threads
+                listings (reddit/get-last-subreddit-threads subreddit {})]
+            
+            ;; If we have something, we need to send them to out and then we can update fullname
+            (doseq [listing listings]
+              (let [url (reddit/extract-url-from-listing listing)]
+                (log/info "Will download comments from " url)
+                (>! out url)))
 
-          ;; Then wait a bit and do it again
-          (println "Will sleep for " sleeping-time " seconds.")
-          (Thread/sleep (* sleeping-time 1000)))))
+            ;; Wait for next subreddit request.
+            (recur (<! subreddit-chan))))))
     out))
 
 ;; ======================================================================================
@@ -52,12 +68,19 @@
     ;; Start a new go block in which we are going to listen to incoming links
     (go
       (while true
-        (let [url (<! in)
-              thread (reddit/get-thread-by-url url)
-              comments (reddit/extract-comments-from-thread thread)]
-          ;; Send the comments to the next pipeline block
-          (doseq [comment comments]
-            (>! out comment)))))
+        (let [url (<! in)]
+          
+          (log/info "Before HTTP req for " url)
+          ;; HTTP request can fail, but we shouldn't stop the worker
+          (try+
+           (let [thread (reddit/get-thread-by-url url)
+                 comments (reddit/extract-comments-from-thread thread)]
+             ;; Send the comments to the next pipeline block
+             (log/info "After HTTP req for " url)
+             (doseq [comment comments]
+               (>! out comment)))
+           (catch Object e
+             (log/error "Unexpected error in listing-comment-fetcher " e))))))
     out))
 
 ;; ==========================================================================================
@@ -71,7 +94,10 @@
     (while true
       (let [comment (<! in)
             index-name (str "comments")]
-        (es-api/create-document conn index-name comment :id)))))
+        (try+
+         (es-api/create-document conn index-name comment :id)
+         (catch Object e
+           (log/error "Unexpected error in es-db-writer " e)))))))
 
 
 
@@ -79,11 +105,24 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (let [conn (es-api/initialize-conn)
-        ;; Build the pipeline 
-        listing-fetcher-out (latest-listing-fetcher "CryptoCurrency" fetch-sleeping-time)
-        comment-fetcher-out (listing-comment-fetcher listing-fetcher-out)]
-    (es-db-writer comment-fetcher-out conn)
+  (let [properties (load-properties)]
+    (log/info (str "Will start with following properties: " properties))
+    (try+
+     (let [subreddit-chan (chan)
+           conn (es-api/initialize-conn properties)
+           ;; Build the pipeline 
+           listing-fetcher-out (latest-listing-fetcher subreddit-chan fetch-sleeping-time)
+           comment-fetcher-out (listing-comment-fetcher listing-fetcher-out)]
+       (es-db-writer comment-fetcher-out conn)
 
-    (while true
-      (Thread/sleep 10000))))
+       (>!! subreddit-chan "CryptoCurrency")
+       (Thread/sleep 5000)
+       (>!! subreddit-chan :close))
+     (catch java.net.ConnectException e
+       (log/error "Cannot connect to elasticsearch " e)
+       (throw+))
+     (catch Object e
+       ;; This is unexpected... Log it and throw it to terminate the program. The supervisor will
+       ;; handle the rest
+       (log/fatal e)
+       (throw+)))))

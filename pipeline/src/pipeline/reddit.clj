@@ -2,7 +2,8 @@
   (:gen-class)
   (:require [clj-http.client :as client]
             [clojure.data.json :as json]
-            [clojure.walk])
+            [clojure.walk]
+            [clojure.tools.logging :as log])
   (:use [slingshot.slingshot :only [try+ throw+]]))
 
 
@@ -16,7 +17,7 @@
 (defn handle-http-error
   "Handle the HTTP error returned by clj-http"
   [error]
-  (println error)
+  (log/error error)
   ;; Return empty list  so that we do continue the process
   [])
 
@@ -33,7 +34,8 @@
       (error-cb e))
     (catch [:status 429] e
       (error-cb e))
-    (catch Object _
+    (catch Object e
+      (log/error e)
       ;; Unexpected error, do not catch
       (throw+))))
 
@@ -63,8 +65,6 @@
 
 (def reddit-url "https://reddit.com")
 (def http-retry-nb 5)
-
-(def test-thread-url "https://www.reddit.com/r/FunfairTech/comments/7pwons/buying_funfair")
 
 (defn build-subreddit-api-call
   "api-call is for example /show.json or /top.json"
@@ -120,7 +120,7 @@
                            comments-json)
     @flattened))
 
-(def comment-keys [:body :parent_id :id :subreddit])
+(def comment-keys [:body :parent_id :id :subreddit :created])
 
 (defn select-comment-keys [flattened-comments]
   (map #(select-keys % comment-keys) flattened-comments))

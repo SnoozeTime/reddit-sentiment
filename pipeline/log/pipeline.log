@@ -75,3 +75,240 @@
 2018-01-21 11:50:14.672 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rol9s/new_doug_polk_crypto_video_10_things_you_need_to/
 2018-01-21 11:50:15.171 | INFO  | async-dispatch-3 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7roa5t/bounty0x_review_undervalued_or_overhyped/
 2018-01-21 11:50:15.176 | INFO  | async-dispatch-2 | pipeline.core | Close latest-listing-fetcher
+2018-01-21 22:08:33.232 | INFO  | main | pipeline.core | Cannot find property file at  nil .
+ Please set the environment variable REDDIT_PROJECT_PROPS_PATH
+2018-01-21 22:09:08.946 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://127.0.0.1:9200"}}
+2018-01-21 22:11:12.213 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://127.0.0.1:9200"}}
+2018-01-22 21:56:36.883 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://128.199.155.153:9200"}}
+2018-01-22 22:00:24.285 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://128.199.155.153:9200"}}
+2018-01-22 22:00:24.804 | INFO  | main | pipeline.core | Starts latest-listing-fetcher
+2018-01-22 22:00:27.064 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 22:00:27.066 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 22:00:27.066 | INFO  | async-dispatch-5 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 22:00:29.665 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 22:01:35.604 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 22:01:35.604 | INFO  | async-dispatch-8 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 22:01:38.188 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 22:02:41.179 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 22:02:41.184 | INFO  | async-dispatch-5 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 22:02:43.402 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 22:03:15.674 | INFO  | async-dispatch-8 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 22:03:15.676 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 22:03:17.970 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 22:04:16.566 | INFO  | async-dispatch-3 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 22:04:16.568 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 22:04:19.049 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 22:05:16.261 | INFO  | async-dispatch-1 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 22:05:16.262 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 22:05:19.345 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 22:06:30.836 | INFO  | async-dispatch-8 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 22:06:30.837 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 22:06:31.794 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 22:06:51.662 | INFO  | async-dispatch-5 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 22:06:51.664 | INFO  | async-dispatch-6 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 22:06:53.566 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 22:07:25.168 | INFO  | async-dispatch-3 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 22:07:25.169 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 22:07:27.019 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 22:08:03.584 | INFO  | async-dispatch-4 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 22:08:03.584 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxd5p/its_illegal_to_block_south_korean_exchanges/
+2018-01-22 22:08:06.178 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 22:08:47.395 | INFO  | async-dispatch-2 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxd5p/its_illegal_to_block_south_korean_exchanges/
+2018-01-22 22:08:47.397 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 22:08:48.108 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxd5p/its_illegal_to_block_south_korean_exchanges/
+2018-01-22 22:08:53.644 | INFO  | async-dispatch-3 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 22:08:53.645 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxm0b/10_trillion_market_cap_for_crypto_rbc_capital/
+2018-01-22 22:08:54.731 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 22:09:14.439 | INFO  | async-dispatch-2 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxm0b/10_trillion_market_cap_for_crypto_rbc_capital/
+2018-01-22 22:09:14.442 | INFO  | async-dispatch-5 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s2k3t/deadpool_gets_it/
+2018-01-22 22:09:15.887 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxm0b/10_trillion_market_cap_for_crypto_rbc_capital/
+2018-01-22 22:09:50.807 | INFO  | async-dispatch-8 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2k3t/deadpool_gets_it/
+2018-01-22 22:09:50.810 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxja3/doug_polk_the_voice_we_need/
+2018-01-22 22:09:51.543 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2k3t/deadpool_gets_it/
+2018-01-22 22:09:56.930 | INFO  | async-dispatch-4 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxja3/doug_polk_the_voice_we_need/
+2018-01-22 22:09:56.931 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 22:09:57.833 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxja3/doug_polk_the_voice_we_need/
+2018-01-22 22:10:11.781 | INFO  | async-dispatch-5 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 22:10:11.783 | INFO  | async-dispatch-6 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 22:10:12.462 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 22:10:16.817 | INFO  | async-dispatch-5 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 22:10:16.820 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 22:10:17.947 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 22:10:31.671 | INFO  | async-dispatch-6 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 22:10:31.672 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 22:10:32.367 | INFO  | async-dispatch-6 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 22:10:34.925 | INFO  | async-dispatch-3 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 22:10:34.926 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 22:10:36.080 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 22:10:42.164 | INFO  | async-dispatch-1 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 22:10:42.164 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 22:10:44.065 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 22:11:26.283 | INFO  | async-dispatch-7 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 22:11:26.284 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 22:11:27.744 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 22:12:00.365 | INFO  | async-dispatch-1 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 22:12:00.366 | INFO  | async-dispatch-6 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 22:12:02.480 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 22:12:42.828 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxxdo/the_truth_about_trading_altcoins/
+2018-01-22 22:12:42.830 | INFO  | async-dispatch-8 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 22:12:44.565 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 22:13:26.051 | INFO  | async-dispatch-7 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxxdo/the_truth_about_trading_altcoins/
+2018-01-22 22:13:26.052 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s026s/stellar_lumens_xlmstr_investment_in_my_humble/
+2018-01-22 22:13:27.077 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxxdo/the_truth_about_trading_altcoins/
+2018-01-22 22:13:36.621 | INFO  | async-dispatch-7 | pipeline.core | Before HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s026s/stellar_lumens_xlmstr_investment_in_my_humble/
+2018-01-22 22:13:36.625 | INFO  | async-dispatch-1 | pipeline.core | Close latest-listing-fetcher
+2018-01-22 22:41:29.010 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://128.199.155.153:9200"}, :listing-comment-fetcher-number 5}
+2018-01-22 22:41:29.502 | INFO  | main | pipeline.core | Index  comments  already exists.
+2018-01-22 22:41:29.508 | INFO  | main | pipeline.core | Starts latest-listing-fetcher
+2018-01-22 22:41:29.527 | FATAL | main | pipeline.core | #error {
+ :cause Wrong number of args (1) passed to: core/listing-comment-fetcher
+ :via
+ [{:type clojure.lang.ArityException
+   :message Wrong number of args (1) passed to: core/listing-comment-fetcher
+   :at [clojure.lang.AFn throwArity AFn.java 429]}]
+ :trace
+ [[clojure.lang.AFn throwArity AFn.java 429]
+  [clojure.lang.AFn invoke AFn.java 32]
+  [pipeline.core$_main invokeStatic core.clj 126]
+  [pipeline.core$_main doInvoke core.clj 112]
+  [clojure.lang.RestFn invoke RestFn.java 397]
+  [clojure.lang.Var invoke Var.java 375]
+  [user$eval5 invokeStatic form-init3010552578658348201.clj 1]
+  [user$eval5 invoke form-init3010552578658348201.clj 1]
+  [clojure.lang.Compiler eval Compiler.java 6927]
+  [clojure.lang.Compiler eval Compiler.java 6917]
+  [clojure.lang.Compiler load Compiler.java 7379]
+  [clojure.lang.Compiler loadFile Compiler.java 7317]
+  [clojure.main$load_script invokeStatic main.clj 275]
+  [clojure.main$init_opt invokeStatic main.clj 277]
+  [clojure.main$init_opt invoke main.clj 277]
+  [clojure.main$initialize invokeStatic main.clj 308]
+  [clojure.main$null_opt invokeStatic main.clj 342]
+  [clojure.main$null_opt invoke main.clj 339]
+  [clojure.main$main invokeStatic main.clj 421]
+  [clojure.main$main doInvoke main.clj 384]
+  [clojure.lang.RestFn invoke RestFn.java 421]
+  [clojure.lang.Var invoke Var.java 383]
+  [clojure.lang.AFn applyToHelper AFn.java 156]
+  [clojure.lang.Var applyTo Var.java 700]
+  [clojure.main main main.java 37]]}
+2018-01-22 22:42:07.003 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://128.199.155.153:9200"}, :listing-comment-fetcher-number 5}
+2018-01-22 22:42:07.447 | INFO  | main | pipeline.core | Index  comments  already exists.
+2018-01-22 22:42:07.453 | INFO  | main | pipeline.core | Starts latest-listing-fetcher
+2018-01-22 22:42:09.776 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 22:42:09.778 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 22:42:09.780 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 22:42:09.783 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 22:42:09.785 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 22:42:09.787 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 22:42:11.209 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 22:42:11.353 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 22:42:11.537 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 22:42:11.538 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 22:42:11.596 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 22:44:56.310 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 22:44:58.925 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 22:47:10.492 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 22:47:10.962 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 22:47:11.774 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 22:47:12.624 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 22:47:16.736 | INFO  | async-dispatch-2 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 22:47:18.061 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 22:47:38.844 | INFO  | async-dispatch-2 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 22:47:40.304 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 22:48:51.620 | INFO  | async-dispatch-2 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 22:48:53.209 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 22:49:43.708 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxm0b/10_trillion_market_cap_for_crypto_rbc_capital/
+2018-01-22 22:49:45.882 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 22:49:46.194 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s2k3t/deadpool_gets_it/
+2018-01-22 22:49:47.760 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxm0b/10_trillion_market_cap_for_crypto_rbc_capital/
+2018-01-22 22:49:50.772 | INFO  | async-dispatch-2 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 22:49:51.619 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2k3t/deadpool_gets_it/
+2018-01-22 22:50:30.480 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 22:50:31.714 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 22:50:33.960 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 22:50:34.675 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 22:50:46.572 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 22:50:47.700 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 22:51:13.670 | INFO  | async-dispatch-5 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 22:51:15.625 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 22:51:20.249 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 22:51:21.161 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 22:51:21.612 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 22:51:22.803 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 22:55:19.310 | INFO  | async-dispatch-2 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxxdo/the_truth_about_trading_altcoins/
+2018-01-22 22:55:21.846 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 22:55:27.092 | INFO  | async-dispatch-5 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s026s/stellar_lumens_xlmstr_investment_in_my_humble/
+2018-01-22 22:55:28.876 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxxdo/the_truth_about_trading_altcoins/
+2018-01-22 22:56:44.200 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s4zli/me_trying_to_board_the_vechain_hypetrain_on_the/
+2018-01-22 22:56:45.463 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s026s/stellar_lumens_xlmstr_investment_in_my_humble/
+2018-01-22 22:56:51.324 | INFO  | async-dispatch-4 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s43wd/if_the_banks_are_closing_accounts_related_to/
+2018-01-22 22:56:52.978 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s4zli/me_trying_to_board_the_vechain_hypetrain_on_the/
+2018-01-22 22:57:36.456 | INFO  | async-dispatch-8 | pipeline.core | Close latest-listing-fetcher
+2018-01-22 23:05:45.860 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://128.199.155.153:9200"}, :listing-comment-fetcher-number 5}
+2018-01-22 23:05:46.234 | INFO  | main | pipeline.core | Index  comments  already exists.
+2018-01-22 23:05:46.236 | INFO  | main | pipeline.core | Starts latest-listing-fetcher
+2018-01-22 23:05:48.578 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 23:05:48.582 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 23:05:48.586 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 23:05:48.590 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 23:05:48.593 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 23:05:48.595 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 23:05:50.080 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 23:05:50.173 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 23:05:50.179 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 23:05:50.185 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 23:05:50.272 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 23:08:42.656 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 23:08:45.275 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 23:17:07.110 | INFO  | main | pipeline.core | Will start with following properties: {:es {:url "http://128.199.155.153:9200"}, :listing-comment-fetcher-number 5}
+2018-01-22 23:17:07.555 | INFO  | main | pipeline.core | Index  comments  already exists.
+2018-01-22 23:17:07.557 | INFO  | main | pipeline.core | Starts latest-listing-fetcher
+2018-01-22 23:17:09.386 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 23:17:09.388 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 23:17:09.390 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 23:17:09.392 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 23:17:09.393 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 23:17:09.395 | INFO  | async-dispatch-8 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 23:17:10.968 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0mt6/rasppi_lego_btceth_ticker/
+2018-01-22 23:17:10.972 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 23:17:11.081 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz54u/iota_johann_jungwirth_the_chief_digital_officer/
+2018-01-22 23:17:11.104 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ryjxx/vechain_tweet_i_am_proud_to_announce_that_as_of/
+2018-01-22 23:17:11.313 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rydb6/high_withdrawal_fee_on_binance_is_bs_check_the/
+2018-01-22 23:17:11.417 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry9ck/vechain_passes_the_first_ever_cryptocurrency/
+2018-01-22 23:17:11.592 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 23:17:12.560 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 23:17:12.682 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s4h8a/update_from_official_request_network_twitter/
+2018-01-22 23:17:13.448 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 23:17:14.008 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0j73/the_icon_team_seems_to_be_extremely_confident_on/
+2018-01-22 23:17:14.231 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 23:17:14.437 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s0qp4/stellar_lumens_has_all_it_takes_to_be_a_top/
+2018-01-22 23:17:14.927 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 23:17:15.243 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s2b1s/moneros_pointofsale_solution_in_on_testnet_v6_and/
+2018-01-22 23:17:15.571 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 23:17:16.155 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 23:17:16.404 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s09qy/trevon_james_is_at_it_again_so_please_be_aware_of/
+2018-01-22 23:17:16.696 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7ry3bz/i_created_a_valuation_model_for_ethereum_eth/
+2018-01-22 23:17:17.008 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 23:17:17.276 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s20hu/south_koreas_second_largest_bank_supports/
+2018-01-22 23:17:17.616 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s4zli/me_trying_to_board_the_vechain_hypetrain_on_the/
+2018-01-22 23:17:17.719 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rz543/i_work_for_one_of_canadas_big_banks_and_our/
+2018-01-22 23:17:17.794 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s1prq/russian_ministry_of_finance_to_legalize/
+2018-01-22 23:17:18.292 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 23:17:18.473 | INFO  | async-dispatch-1 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rya2n/south_korean_bill_requires_public_officials_to/
+2018-01-22 23:17:18.988 | INFO  | async-dispatch-7 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 23:17:19.314 | INFO  | async-dispatch-5 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 23:17:19.728 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s4zli/me_trying_to_board_the_vechain_hypetrain_on_the/
+2018-01-22 23:17:20.040 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 23:17:20.465 | INFO  | async-dispatch-5 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s43wd/if_the_banks_are_closing_accounts_related_to/
+2018-01-22 23:17:20.889 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s3grj/to_all_you_guys_who_claim_to_love_lambos/
+2018-01-22 23:17:21.170 | INFO  | async-dispatch-2 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzfrc/bitcoin_accounts_for_019_of_the_worlds_total/
+2018-01-22 23:17:21.285 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7rxxdo/the_truth_about_trading_altcoins/
+2018-01-22 23:17:21.480 | INFO  | async-dispatch-8 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rzow7/neo_feels_a_lot_like_eth_circa_may_2017/
+2018-01-22 23:17:21.701 | INFO  | async-dispatch-3 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rxu1j/add_us_bank_to_the_list_of_crypto_haters/
+2018-01-22 23:17:21.915 | INFO  | async-dispatch-1 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s026s/stellar_lumens_xlmstr_investment_in_my_humble/
+2018-01-22 23:17:22.107 | INFO  | async-dispatch-7 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7rypx6/nvidia_tells_retailers_to_sell_to_gamers_not/
+2018-01-22 23:17:22.319 | INFO  | async-dispatch-4 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s43wd/if_the_banks_are_closing_accounts_related_to/
+2018-01-22 23:17:22.404 | INFO  | async-dispatch-5 | pipeline.core | After HTTP req for  https://reddit.com/r/CryptoCurrency/comments/7s3grj/to_all_you_guys_who_claim_to_love_lambos/
+2018-01-22 23:17:22.616 | INFO  | async-dispatch-3 | pipeline.core | Will download comments from  https://reddit.com/r/CryptoCurrency/comments/7s4dkk/bitcoinorg_has_removed_the_lowfee_part_of_bitcoin/
+2018-01-22 23:17:23.316 | INFO  | async-dispatch-7 | pipeline.core | Close latest-listing-fetcher

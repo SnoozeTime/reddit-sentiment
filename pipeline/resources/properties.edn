@@ -1,1 +1,5 @@
-{:es {:url "http://127.0.0.1:9200"}}
+{:es {:url "http://128.199.155.153:9200"}
+
+ ;; How many comment fetcher are used. When there are many comments, it might take a long
+ ;; time to process everything.
+ :listing-comment-fetcher-number 5}
